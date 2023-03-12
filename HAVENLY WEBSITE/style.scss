@@ -39,7 +39,7 @@
   left: 0 !important;
 }
 .menu-btn {
-  position: fixed;
+  position: absolute;
   top: 30px;
   right: 15px;
   width: 26px;
@@ -69,7 +69,7 @@
 // Style the inside of the NAV Menu - Mobile Menu
 .menu-box {
   display: block;
-  position: fixed;
+  position: absolute;
   top: 62px;
   left: -100%;
   width: 100%;
@@ -79,6 +79,7 @@
   list-style: none;
   background-color: #f3f0eb;
   transition-duration: 0.5s;
+
   .menu-item {
     display: block;
     padding: 12px 24px;
@@ -113,15 +114,76 @@
   }
 }
 
-// Style image
+// Style header content
 
-@media screen and (max-width: 600px) {
-  .navImage {
+.header-content {
+  position: relative;
+
+  .header-image {
     width: 100%;
     height: auto;
   }
-  img {
-    aspect-ratio: auto 375/500;
-    overflow-clip-margin: content-box;
+  h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // display: grid;
+    // grid-template-rows: 1fr 10px;
+
+    font-family: Simula, serif;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    font-size: 35px;
+    line-height: 35px;
+    letter-spacing: 0.8px;
+    margin-top: 0;
+    margin-bottom: 28px;
+  }
+  .header-button {
+    height: 40x;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 24px;
+    min-width: 151px;
+    font-family: ABC Monument Grotesk, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 44px;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 4%);
+    color: #362b24;
+    background-color: rgb(229, 148, 0);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .header-image {
+    aspect-ratio: auto 375/500;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .header-content {
+    h2 {
+      font-size: 60px;
+      line-height: 60px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-content {
+    h2 {
+      font-size: 90px;
+      line-height: 94px;
+    }
+  }
+}
+
