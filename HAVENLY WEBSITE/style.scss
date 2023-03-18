@@ -167,56 +167,304 @@
 
 // Style Section CUST EXPERIENCE
 
- .customer-experience {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    margin-bottom: 64px;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
+.cloudy-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
 
-    .style-photo {
-      width:100%
-     heigth:auto;
-    }
+  .style-photo {
+    width: 100%;
+    height: auto;
   }
+}
 
+.cloudy-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .cloudy-photo {
+    width: 80px;
+    height: auto;
+  }
+  .cloudy-title {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    padding: 0 0 16px;
+    margin: 0;
+    font-family: Simula, serif;
+    font-weight: 400;
+  }
+  .cloudy-text {
+    text-align: center;
+    font-family: Graphik, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #362b24;
+    letter-spacing: -0.4px;
+    margin: 15px;
+  }
+}
+
+// Style Section Reimagine Space EXPERIENCE
+
+.reimagine-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  .livingroom-photo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.reimagine-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .reimagine-photo {
+    width: 80px;
+    height: auto;
+  }
+  .reimagine-title {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    padding: 0 0 16px;
+    margin: 0;
+    font-family: Simula, serif;
+    font-weight: 400;
+  }
+  .reimagine-text {
+    text-align: center;
+    font-family: Graphik, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #362b24;
+    letter-spacing: -0.4px;
+    margin: 15px;
+  }
+}
+
+// Style Section Dining room EXPERIENCE
+.wine-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  .double-images {
+    display: flex;
+    gap: 12px;
+  }
+  .womansofa-photo {
+    min-width: 150px;
+    max-width: 300px;
+    min-height: auto;
+    max-height: auto;
+  }
+  .dining-photo {
+    min-width: 150px;
+    max-width: 300px;
+    min-height: auto;
+    max-height: auto;
+  }
+}
+
+.wine-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .wine-photo {
+    width: 80px;
+    height: auto;
+  }
+  .wine-title {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    padding: 0 0 16px;
+    margin: 0;
+    font-family: Simula, serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .wine-text {
+    text-align: center;
+    font-family: Graphik, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #362b24;
+    letter-spacing: -0.4px;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  // Style Section CUST EXPERIENCE
+  .cloudy-experience {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 96px;
+    gap: 40px;
+  }
   .cloudy-style {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
+    padding-left: 0;
+    margin-top: -20px;
 
+    .cloudy-title,
+    .cloudy-text {
+      text-align: left;
+      max-width: 500px;
+    }
+  }
+  .style-photo {
+    max-width: 550px;
+    max-height: auto;
+  }
+
+  // Style Section Reimagine Space EXPERIENCE
+  .reimagine-experience {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 96px;
+    gap: 40px;
+  }
+  .reimagine-style {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 0;
+    margin-top: -20px;
+
+    .reimagine-title,
+    .reimagine-text {
+      text-align: left;
+      max-width: 500px;
+    }
+  }
+  .livingroom-photo {
+    max-width: 550px;
+    max-height: auto;
+  }
+
+  // Style Section Wine Space EXPERIENCE
+  .wine-experience {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 96px;
+    gap: 40px;
+
+    .womansofa-photo {
+      min-width: 100px;
+      max-width: 250px;
+      min-height: auto;
+      max-height: auto;
+    }
+    .dining-photo {
+      min-width: 100px;
+      max-width: 250px;
+      min-height: auto;
+      max-height: auto;
+    }
+  }
+  .wine-style {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 0;
+    margin-top: -20px;
+    .wine-title,
+    .wine-text {
+      text-align: left;
+      max-width: 500px;
+    }
+  }
+  .wine-photo {
+    max-width: 550px;
+    max-height: auto;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  // Style Section CUST EXPERIENCE
+  .style-photo {
+    max-width: 800px;
+    max-height: auto;
+  }
+  .cloudy-style {
     .cloudy-photo {
-      width: 80px;
+      width: 120px;
       height: auto;
     }
     .cloudy-title {
-      font-size: 28px;
-      line-height: 32px;
-      letter-spacing: -0.4px;
-      padding: 0 0 16px;
-      margin: 0;
-    }
-    .cloudy-text {
-      text-align: center;
-      font-family: Graphik, sans-serif;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      color: #362b24;
-      letter-spacing: -0.4px;
-      margin: 15px;
+      font-size: 32px;
+      line-height: 36px;
     }
   }
 
-
-// @media screen and (max-width: 800px) {
-//   .customer-experience {
-//     .style-photo {
-//       width: 100%;
-//       height: auto;
-//     }
-//   }
-// }
-
+  // Style Section Reimagine Space EXPERIENCE
+  .livingroom-photo {
+    max-width: 800px;
+    max-height: auto;
+  }
+  .reimagine-style {
+    .reimagine-photo {
+      width: 120px;
+      height: auto;
+    }
+    .reimagine-title {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+  // Style Section Wine Space EXPERIENCE
+  .wine-experience {
+    .womansofa-photo {
+      min-width: 350px;
+      max-width: 400px;
+      min-height: auto;
+      max-height: auto;
+    }
+    .dining-photo {
+      min-width: 350px;
+      max-width: 400px;
+      min-height: auto;
+      max-height: auto;
+    }
+  }
+  .wine-style {
+    .wine-photo {
+      width: 120px;
+      height: auto;
+    }
+    .wine-title {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+}
