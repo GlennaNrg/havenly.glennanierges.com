@@ -321,6 +321,121 @@
   }
 }
 
+// Style Package Container
+.package-container {
+  width: 100%;
+  background-color: #304561;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px 50px;
+}
+.package-cards {
+  background-color: #f3f0eb;
+  border: none;
+  text-align: center;
+  width: 357px;
+
+  .card-offer {
+    padding: 32px 25px;
+  }
+  .card-offer > h1 {
+    font-size: 40px;
+    line-height: 58px;
+    text-transform: capitalize;
+    font-family: Simula, serif;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    text-align: center;
+    color: #362b24;
+  }
+  .price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    .price-original {
+      color: #c4c4c4;
+      text-decoration: line-through;
+      letter-spacing: -0.8px;
+      font-size: 34px;
+      font-weight: 600;
+      line-height: 40px;
+    }
+    .price-reduced {
+      color: #ed6b4d;
+      font-size: 34px;
+      letter-spacing: -0.8px;
+      font-size: 34px;
+      font-weight: 600;
+      line-height: 40px;
+    }
+  }
+  .pricing-card > h3 {
+    font-family: Graphik, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #362b24;
+    letter-spacing: -0.4px;
+    text-align: center;
+    width: 325px;
+    height: 150px;
+  }
+  .button-card {
+    color: #362b24;
+    background: transparent;
+    border: 1px solid #e59400;
+    width: 247px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 24px;
+    min-width: 151px;
+    font-family: ABC Monument Grotesk, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 44px;
+  }
+}
+.press {
+  padding: 70px 131px 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-family: ABC Monument Grotesk, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  h1 {
+    margin: 40px auto 76px;
+    font-size: 34px;
+    line-height: 38px;
+    font-family: Simula, serif;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.4px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .press {
+    padding: 50px 100px 55px;
+    h1 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+}
 @media screen and (min-width: 800px) {
   // Style Section CUST EXPERIENCE
   .cloudy-experience {
