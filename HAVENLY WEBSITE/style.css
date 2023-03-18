@@ -42,8 +42,7 @@
 .burger-container .sub-menu {
   display: none;
 }
-.burger-container:hover .sub-menu,
-.burger-container:focus-within .sub-menu {
+.burger-container:hover .sub-menu, .burger-container:focus-within .sub-menu {
   display: inherit;
   position: absolute;
   top: 64px;
@@ -157,19 +156,21 @@
   letter-spacing: -0.4px;
 }
 
-.customer-experience {
+.cloudy-experience {
   display: flex;
   flex-direction: column;
   gap: 32px;
   margin-bottom: 64px;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
-.customer-experience .style-photo {
-    width:100%
-    height: auto;
-  }
+.cloudy-experience .style-photo {
+  width: 100%;
+  height: auto;
+}
+
 .cloudy-style {
   display: flex;
   flex-direction: column;
@@ -185,6 +186,8 @@
   letter-spacing: -0.4px;
   padding: 0 0 16px;
   margin: 0;
+  font-family: Simula, serif;
+  font-weight: 400;
 }
 .cloudy-style .cloudy-text {
   text-align: center;
@@ -196,4 +199,231 @@
   letter-spacing: -0.4px;
   margin: 15px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.reimagine-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.reimagine-experience .livingroom-photo {
+  width: 100%;
+  height: auto;
+}
+
+.reimagine-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reimagine-style .reimagine-photo {
+  width: 80px;
+  height: auto;
+}
+.reimagine-style .reimagine-title {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  padding: 0 0 16px;
+  margin: 0;
+  font-family: Simula, serif;
+  font-weight: 400;
+}
+.reimagine-style .reimagine-text {
+  text-align: center;
+  font-family: Graphik, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #362b24;
+  letter-spacing: -0.4px;
+  margin: 15px;
+}
+
+.wine-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.wine-experience .double-images {
+  display: flex;
+  gap: 12px;
+}
+.wine-experience .womansofa-photo {
+  min-width: 150px;
+  max-width: 300px;
+  min-height: auto;
+  max-height: auto;
+}
+.wine-experience .dining-photo {
+  min-width: 150px;
+  max-width: 300px;
+  min-height: auto;
+  max-height: auto;
+}
+
+.wine-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wine-style .wine-photo {
+  width: 80px;
+  height: auto;
+}
+.wine-style .wine-title {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  padding: 0 0 16px;
+  margin: 0;
+  font-family: Simula, serif;
+  font-weight: 400;
+  text-align: center;
+}
+.wine-style .wine-text {
+  text-align: center;
+  font-family: Graphik, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #362b24;
+  letter-spacing: -0.4px;
+  margin: 15px;
+}
+
+@media screen and (min-width: 800px) {
+  .cloudy-experience {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 96px;
+    gap: 40px;
+  }
+  .cloudy-style {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 0;
+    margin-top: -20px;
+  }
+  .cloudy-style .cloudy-title,
+  .cloudy-style .cloudy-text {
+    text-align: left;
+    max-width: 500px;
+  }
+  .style-photo {
+    max-width: 550px;
+    max-height: auto;
+  }
+  .reimagine-experience {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 96px;
+    gap: 40px;
+  }
+  .reimagine-style {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 0;
+    margin-top: -20px;
+  }
+  .reimagine-style .reimagine-title,
+  .reimagine-style .reimagine-text {
+    text-align: left;
+    max-width: 500px;
+  }
+  .livingroom-photo {
+    max-width: 550px;
+    max-height: auto;
+  }
+  .wine-experience {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 96px;
+    gap: 40px;
+  }
+  .wine-experience .womansofa-photo {
+    min-width: 100px;
+    max-width: 250px;
+    min-height: auto;
+    max-height: auto;
+  }
+  .wine-experience .dining-photo {
+    min-width: 100px;
+    max-width: 250px;
+    min-height: auto;
+    max-height: auto;
+  }
+  .wine-style {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 0;
+    margin-top: -20px;
+  }
+  .wine-style .wine-title,
+  .wine-style .wine-text {
+    text-align: left;
+    max-width: 500px;
+  }
+  .wine-photo {
+    max-width: 550px;
+    max-height: auto;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .style-photo {
+    max-width: 800px;
+    max-height: auto;
+  }
+  .cloudy-style .cloudy-photo {
+    width: 120px;
+    height: auto;
+  }
+  .cloudy-style .cloudy-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .livingroom-photo {
+    max-width: 800px;
+    max-height: auto;
+  }
+  .reimagine-style .reimagine-photo {
+    width: 120px;
+    height: auto;
+  }
+  .reimagine-style .reimagine-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .wine-experience .womansofa-photo {
+    min-width: 350px;
+    max-width: 400px;
+    min-height: auto;
+    max-height: auto;
+  }
+  .wine-experience .dining-photo {
+    min-width: 350px;
+    max-width: 400px;
+    min-height: auto;
+    max-height: auto;
+  }
+  .wine-style .wine-photo {
+    width: 120px;
+    height: auto;
+  }
+  .wine-style .wine-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}/*# sourceMappingURL=style.css.map */
