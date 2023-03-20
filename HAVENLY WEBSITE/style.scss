@@ -1,10 +1,19 @@
 * {
-  margin: 0;
-  padding: 0;
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
 }
 // Style the NAV BAR
+.desktop-navi-links {
+  display: none;
+}
+.log-out-header {
+  display: none;
+}
 .header-menu {
-  width: 100%;
+  // width: 100%;
   height: 800px;
   background: url(images/nav-image.avif) no-repeat center center;
   background-size: cover;
@@ -93,6 +102,21 @@
     margin-top: 600px;
     margin-left: -30px;
   }
+  h1 {
+    display: none;
+    color: #fff;
+    position: absolute;
+    font-family: Graphik, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+
+    margin-bottom: -140px;
+    margin-top: 600px;
+    margin-left: -30px;
+  }
+
   .header-button {
     text-decoration: none;
     display: inline-flex;
@@ -117,6 +141,7 @@
   }
 }
 
+//Style Sdection Video Container
 .video-container {
   margin: 56px 40px 72px;
   text-align: center;
@@ -321,7 +346,7 @@
   }
 }
 
-// Style Package Container
+// Style Section Package Container
 .package-container {
   width: 100%;
   background-color: #304561;
@@ -400,6 +425,8 @@
     border-radius: 44px;
   }
 }
+
+// Style Section Press
 .press {
   padding: 70px 131px 75px;
   display: flex;
@@ -427,7 +454,77 @@
   }
 }
 
+// Style Section Shop
+.shop {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 0;
+
+  .bedroom-photo {
+    width: 100%;
+  }
+  .shop-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e59300;
+    padding: 58px 53px 49px;
+    margin-top: -3px;
+
+    h3 {
+      margin-bottom: 12px;
+      font-family: ABC Monument Grotesk, sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 30px;
+      font-size: 38px;
+      font-family: Simula, serif;
+      font-weight: 400;
+      line-height: 42px;
+      letter-spacing: -0.4px;
+      color: #362b24;
+      text-align: center;
+    }
+    .button-shop {
+      color: #362b24;
+      background: #fff;
+      text-align: center;
+      white-space: nowrap;
+      height: 44px;
+      min-height: 44px;
+      font-size: 14px;
+      line-height: 24px;
+      min-width: 151px;
+      font-family: ABC Monument Grotesk, sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 0 40px;
+      border-radius: 44px;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+
+      cursor: pointer;
+      &:hover {
+        background: #304561;
+        color: #fff;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
+  // STYLE Section Press
   .press {
     padding: 50px 100px 55px;
     h1 {
@@ -526,6 +623,111 @@
 }
 
 @media screen and (min-width: 1100px) {
+  // Style Section Nav Bar
+  .header-content {
+    h1 {
+      display: inherit;
+    }
+  }
+  .burger-container {
+    display: none;
+  }
+  .desktop-navi-links {
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    gap: clamp(5px, 2vw, 49px);
+    padding-left: 30px;
+    cursor: pointer;
+
+    font-family: ABC Monument Grotesk, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .log-out-header {
+    display: inherit;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    z-index: 1040;
+    margin-right: -160px;
+
+    .login-button {
+      text-decoration: none;
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 0 20px;
+      height: 40px;
+      font-size: 14px;
+      min-width: 151px;
+
+      font-family: ABC Monument Grotesk, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 24px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 44px;
+      letter-spacing: 1px;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+      text-align: center;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    .get-started-button {
+      text-decoration: none;
+      background: white;
+      border: 1px solid #fff;
+      padding: 0 20px;
+      height: 40px;
+      font-size: 14px;
+      min-width: 151px;
+
+      font-family: ABC Monument Grotesk, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 24px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 44px;
+      letter-spacing: 1px;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+      text-align: center;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+  }
+
+  .header-content {
+    h2 {
+      max-width: 750px;
+      font-size: 90px;
+      line-height: 94px;
+      margin-top: 725px;
+      margin-left: -400%;
+    }
+    h1 {
+      margin-bottom: -140px;
+      margin-top: 800px;
+      margin-left: -400%;
+    }
+
+    .header-button {
+      margin-bottom: -170px;
+      margin-left: -400%;
+    }
+  }
+
   // Style Section CUST EXPERIENCE
   .style-photo {
     max-width: 800px;
@@ -580,6 +782,22 @@
     .wine-title {
       font-size: 32px;
       line-height: 36px;
+    }
+  }
+
+  // Style Section Shop
+  .shop {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0;
+    .bedroom-photo {
+      width: 800px;
+      height: auto;
+    }
+    .shop-link {
+      padding: 0;
+      margin: 0;
+      text-align: left;
     }
   }
 }
